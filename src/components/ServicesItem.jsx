@@ -96,8 +96,8 @@ ServicesItem.propTypes = {
 ServicesItem.defaultProps = {
     id: 0,
     name: 'Services Item',
-    price: 0,
     images: {},
+    price: 0,
     colors: [],
     sizes: [],
 };
