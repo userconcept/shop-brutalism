@@ -1,0 +1,119 @@
+.basket-item {
+    padding: rem(16);
+    border-bottom: $border_width_2x solid $black;
+
+    @include screen_1200_min_width {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &:first-of-type {
+        border-top-width: 0;
+    }
+
+    &__col {
+        min-height: rem(180);
+        padding-left: rem(136);
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        margin-bottom: rem(16);
+
+        @include screen_1200_min_width {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: rem(120);
+        height: rem(180);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__picture {
+        height: 100%;
+    }
+
+    &__info {
+        margin-top: rem(16);
+        font-size: 0;
+    }
+
+    &__color {
+        cursor: default;
+        &:hover {
+            @include screen_1200_min_width {
+                &:before,
+                &:after {
+                    content: none;
+                }
+            }
+        }
+
+        &.color_active {
+            &:before,
+            &:after {
+                content: none;
+            }
+        }
+
+        & + .basket-item__size {
+            margin-left: rem(8);
+        }
+    }
+
+    &__size {
+        cursor: default;
+        &:hover {
+            @include screen_1200_min_width {
+                &:before,
+                &:after {
+                    content: none;
+                }
+            }
+        }
+
+        &.size_active {
+            &:before,
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+    &__counter,
+    &__price {
+        display: inline-block;
+        vertical-align: middle;
+
+        @include screen_1200_min_width {
+            display: block;
+            vertical-align: baseline;
+        }
+    }
+
+    &__price {
+        margin: 0 rem(16);
+
+        @include screen_1200_min_width {
+            margin: 0;
+        }
+    }
+}

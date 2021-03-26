@@ -1,0 +1,25 @@
+.basket {
+    padding: rem(84) 0 rem(16);
+    text-align: center;
+
+    @include screen_1200_min_width {
+        padding-top: rem(96);
+    }
+
+    &__section-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__section-top,
+    &__basket-list {
+        text-align: left;
+    }
+
+    &__button {
+        margin: rem(16) 0 $border_width_2x;
+    }
+}

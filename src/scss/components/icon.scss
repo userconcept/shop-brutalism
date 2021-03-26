@@ -1,0 +1,13 @@
+.icon {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    fill: currentColor;
+
+    &_logo,
+    &_basket,
+    &_placemark,
+    &_log_in {
+        width: rem(24);
+    }
+}

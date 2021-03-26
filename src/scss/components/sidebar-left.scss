@@ -1,0 +1,11 @@
+.sidebar-left {
+    font-size: 0;
+
+    &__button-tag {
+        margin: rem(16) rem(16) 0 0;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

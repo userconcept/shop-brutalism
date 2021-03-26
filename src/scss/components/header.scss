@@ -1,0 +1,33 @@
+.header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: rem(16) rem(64) rem(16) rem(16);
+    background-color: $white;
+    border: $border_width_2x solid $black;
+    z-index: 2;
+
+    @include screen_1200_min_width {
+        padding: rem(16);
+    }
+
+    &__button-nav {
+        position: absolute;
+        top: rem(20);
+        right: rem(16);
+
+        @include screen_1200_min_width {
+            display: none;
+        }
+    }
+}

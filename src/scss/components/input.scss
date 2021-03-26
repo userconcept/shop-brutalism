@@ -1,0 +1,30 @@
+.input {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: rem(10);
+    border: $border_width_2x solid $black;
+    outline: none;
+    background-color: transparent;
+    color: $black;
+    font-size: rem(16);
+    line-height: 1.25;
+    font-weight: 500;
+    height: rem(44);
+
+    &::-webkit-input-placeholder {
+        color: $black;
+    }
+
+    &:-ms-input-placeholder {
+        color: $black;
+    }
+
+    &::-moz-placeholder {
+        color: $black;
+    }
+
+    &:-moz-placeholder {
+        color: $black;
+    }
+}

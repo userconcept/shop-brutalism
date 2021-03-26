@@ -1,0 +1,23 @@
+.service {
+    padding: rem(84) 0 $border_width_2x;
+
+    @include screen_1200_min_width {
+        padding-top: rem(96);
+    }
+
+    &__section-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__container {
+        @include screen_1200_min_width {
+            display: grid;
+            grid-template-columns: 66.6666666666% 33.3333333333%;
+            margin: 0 -2px;
+        }
+    }
+}

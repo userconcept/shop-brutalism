@@ -1,0 +1,31 @@
+.contact-link {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: rem(40);
+    color: $black;
+    text-decoration: none;
+    position: relative;
+
+    @include screen_1200_min_width {
+        padding: 0 0 0 rem(40);
+    }
+
+    &__icon {
+        display: block;
+        width: rem(24);
+        height: rem(24);
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include screen_1200_min_width {
+            left: 0;
+            right: auto;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-size: rem(16);
+    }
+}

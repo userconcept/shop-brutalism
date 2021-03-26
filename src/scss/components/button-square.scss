@@ -1,0 +1,67 @@
+.button-square {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: rem(2);
+    border: $border_width_2x solid transparent;
+    outline: none;
+    background-color: transparent;
+    font-size: 0;
+    line-height: 1.5;
+    color: $black;
+    position: relative;
+
+    @include screen_1200_min_width {
+        padding: rem(8);
+    }
+
+    &__price,
+    &__number,
+    &__icon {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__price,
+    &__number {
+        display: none;
+
+        @include screen_1200_min_width {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: rem(9);
+            font-size: rem(18);
+        }
+    }
+
+    &__price {
+        margin-right: rem(13);
+        padding-right: rem(13);
+        position: relative;
+
+        &:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: $border_width_2x;
+            background-color: $black;
+        }
+    }
+
+    &__number {
+        margin-right: rem(11);
+    }
+
+    &__icon {
+        width: rem(32);
+        height: rem(32);
+
+        @include screen_1200_min_width {
+            width: rem(40);
+            height: rem(40);
+        }
+    }
+}

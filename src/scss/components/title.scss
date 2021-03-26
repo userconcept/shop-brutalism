@@ -1,0 +1,17 @@
+.title {
+    margin: 0;
+    line-height: 1.25;
+    font-weight: 800;
+
+    &_large {
+        font-size: rem(40);
+    }
+
+    &_middle {
+        font-size: rem(32);
+    }
+
+    &_small {
+        font-size: rem(26);
+    }
+}

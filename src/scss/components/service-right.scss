@@ -1,0 +1,27 @@
+.service-right {
+    padding: rem(16);
+
+    @include screen_1200_min_width {
+        border-left: $border_width_1x solid $black;
+        border-right: $border_width_2x solid $black;
+    }
+
+    &__colors,
+    &__sizes {
+
+        .color,
+        .size {
+            border-color: $black;
+        }
+    }
+
+    &__colors,
+    &__sizes,
+    &__add {
+        margin-top: rem(16);
+    }
+
+    &__price {
+        margin-top: rem(19);
+    }
+}

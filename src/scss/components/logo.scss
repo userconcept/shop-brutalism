@@ -1,0 +1,35 @@
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 rem(64);
+    color: $black;
+    text-decoration: none;
+    position: relative;
+
+    @include screen_1200_min_width {
+        padding-left: rem(76);
+    }
+
+    &__icon {
+        display: block;
+        width: rem(48);
+        height: rem(48);
+        position: absolute;
+        top: 0;
+        left: 0;
+        // fill: url(#gradient-logo);
+
+        @include screen_1200_min_width {
+            width: rem(60);
+            height: rem(60);
+        }
+    }
+
+    &__text {
+        display: block;
+
+        @include screen_1200_min_width {
+            font-size: rem(20);
+        }
+    }
+}

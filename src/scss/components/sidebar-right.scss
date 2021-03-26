@@ -1,0 +1,13 @@
+.sidebar-right {
+    padding-top: rem(16);
+
+    @include screen_1200_min_width {
+        padding-top: 0;
+    }
+
+    &__select-block {
+        text-align: right;
+        position: relative;
+        z-index: 1;
+    }
+}

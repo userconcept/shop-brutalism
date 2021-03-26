@@ -1,0 +1,13 @@
+.service-left {
+
+    @include screen_1200_min_width {
+        border-left: $border_width_2x solid $black;
+        border-right: $border_width_1x solid $black;
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    &__picture-large {
+        padding: rem(16);
+    }
+}

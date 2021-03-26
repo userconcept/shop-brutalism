@@ -1,0 +1,40 @@
+// Fonts:
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Manrope-Regular.eot');
+    src: local('Manrope Regular'), local('Manrope-Regular'),
+        url('../fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/Manrope-Regular.woff') format('woff'),
+        url('../fonts/Manrope-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Manrope-Medium.eot');
+    src: local('Manrope Medium'), local('Manrope-Medium'),
+        url('../fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff'),
+        url('../fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Manrope-ExtraBold.eot');
+    src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'),
+        url('../fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraBold.woff') format('woff'),
+        url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
+}

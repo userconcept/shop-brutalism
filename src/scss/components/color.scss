@@ -1,0 +1,91 @@
+.color {
+    display: inline-block;
+    vertical-align: top;
+    width: rem(30);
+    height: rem(30);
+    border: $border_width_2x solid $black;
+    font-size: 0;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        transition: background-color $trans_sm;
+    }
+
+    &:before {
+        top: 50%;
+        left: -2px;
+        right: -2px;
+        margin-top: -1px;
+        height: $border_width_2x;
+    }
+
+    &:after {
+        top: -2px;
+        left: 50%;
+        bottom: -2px;
+        margin-left: -1px;
+        width: $border_width_2x;
+    }
+
+    &:hover {
+        @include screen_1200_min_width {
+            &:before,
+            &:after {
+                background-color: $black;
+            }
+        }
+    }
+
+    &_active {
+        &:before,
+        &:after {
+            background-color: $black;
+        }
+    }
+
+    &_black {
+        background-color: black;
+
+        &:hover {
+            @include screen_1200_min_width {
+                &:before,
+                &:after {
+                    background-color: $white;
+                }
+            }
+        }
+
+        &.color_active {
+            cursor: default;
+
+            &:before,
+            &:after {
+                background-color: $white;
+            }
+        }
+    }
+
+    &_white {
+        background-color: white;
+    }
+
+    &_blue {
+        background-color: blue;
+    }
+
+    &_green {
+        background-color: green;
+    }
+
+    &_red {
+        background-color: red;
+    }
+
+    &_yellow {
+        background-color: yellow;
+    }
+}

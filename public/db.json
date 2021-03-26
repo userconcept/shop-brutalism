@@ -1,0 +1,220 @@
+{
+    "services": [
+        {
+            "id": 0,
+            "name": "Catalog Item 001",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_001_01_640.webp 640w, /img/content/catalog-item__img_001_01_1280.webp 1280w, /img/content/catalog-item__img_001_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_001_01_640.jpg 640w, /img/content/catalog-item__img_001_01_1280.jpg 1280w, /img/content/catalog-item__img_001_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_001_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_001_02_640.webp 640w, /img/content/catalog-item__img_001_02_1280.webp 1280w, /img/content/catalog-item__img_001_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_001_02_640.jpg 640w, /img/content/catalog-item__img_001_02_1280.jpg 1280w, /img/content/catalog-item__img_001_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_001_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_001_03_640.webp 640w, /img/content/catalog-item__img_001_03_1280.webp 1280w, /img/content/catalog-item__img_001_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_001_03_640.jpg 640w, /img/content/catalog-item__img_001_03_1280.jpg 1280w, /img/content/catalog-item__img_001_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_001_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m"],
+            "category": 0,
+            "rating": 4,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 1,
+            "name": "Catalog Item 002",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_002_01_640.webp 640w, /img/content/catalog-item__img_002_01_1280.webp 1280w, /img/content/catalog-item__img_002_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_002_01_640.jpg 640w, /img/content/catalog-item__img_002_01_1280.jpg 1280w, /img/content/catalog-item__img_002_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_002_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_002_02_640.webp 640w, /img/content/catalog-item__img_002_02_1280.webp 1280w, /img/content/catalog-item__img_002_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_002_02_640.jpg 640w, /img/content/catalog-item__img_002_02_1280.jpg 1280w, /img/content/catalog-item__img_002_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_002_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_002_03_640.webp 640w, /img/content/catalog-item__img_002_03_1280.webp 1280w, /img/content/catalog-item__img_002_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_002_03_640.jpg 640w, /img/content/catalog-item__img_002_03_1280.jpg 1280w, /img/content/catalog-item__img_002_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_002_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 1,
+            "rating": 2,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 2,
+            "name": "Catalog Item 003",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_003_01_640.webp 640w, /img/content/catalog-item__img_003_01_1280.webp 1280w, /img/content/catalog-item__img_003_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_003_01_640.jpg 640w, /img/content/catalog-item__img_003_01_1280.jpg 1280w, /img/content/catalog-item__img_003_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_003_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_003_02_640.webp 640w, /img/content/catalog-item__img_003_02_1280.webp 1280w, /img/content/catalog-item__img_003_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_003_02_640.jpg 640w, /img/content/catalog-item__img_003_02_1280.jpg 1280w, /img/content/catalog-item__img_003_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_003_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_003_03_640.webp 640w, /img/content/catalog-item__img_003_03_1280.webp 1280w, /img/content/catalog-item__img_003_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_003_03_640.jpg 640w, /img/content/catalog-item__img_003_03_1280.jpg 1280w, /img/content/catalog-item__img_003_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_003_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 2,
+            "rating": 3,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 3,
+            "name": "Catalog Item 004",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_004_01_640.webp 640w, /img/content/catalog-item__img_004_01_1280.webp 1280w, /img/content/catalog-item__img_004_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_004_01_640.jpg 640w, /img/content/catalog-item__img_004_01_1280.jpg 1280w, /img/content/catalog-item__img_004_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_004_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_004_02_640.webp 640w, /img/content/catalog-item__img_004_02_1280.webp 1280w, /img/content/catalog-item__img_004_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_004_02_640.jpg 640w, /img/content/catalog-item__img_004_02_1280.jpg 1280w, /img/content/catalog-item__img_004_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_004_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_004_03_640.webp 640w, /img/content/catalog-item__img_004_03_1280.webp 1280w, /img/content/catalog-item__img_004_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_004_03_640.jpg 640w, /img/content/catalog-item__img_004_03_1280.jpg 1280w, /img/content/catalog-item__img_004_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_004_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 3,
+            "rating": 1,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 4,
+            "name": "Catalog Item 005",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_005_01_640.webp 640w, /img/content/catalog-item__img_005_01_1280.webp 1280w, /img/content/catalog-item__img_005_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_005_01_640.jpg 640w, /img/content/catalog-item__img_005_01_1280.jpg 1280w, /img/content/catalog-item__img_005_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_005_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_005_02_640.webp 640w, /img/content/catalog-item__img_005_02_1280.webp 1280w, /img/content/catalog-item__img_005_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_005_02_640.jpg 640w, /img/content/catalog-item__img_005_02_1280.jpg 1280w, /img/content/catalog-item__img_005_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_005_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_005_03_640.webp 640w, /img/content/catalog-item__img_005_03_1280.webp 1280w, /img/content/catalog-item__img_005_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_005_03_640.jpg 640w, /img/content/catalog-item__img_005_03_1280.jpg 1280w, /img/content/catalog-item__img_005_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_005_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 0,
+            "rating": 4,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 5,
+            "name": "Catalog Item 006",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_006_01_640.webp 640w, /img/content/catalog-item__img_006_01_1280.webp 1280w, /img/content/catalog-item__img_006_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_006_01_640.jpg 640w, /img/content/catalog-item__img_006_01_1280.jpg 1280w, /img/content/catalog-item__img_006_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_006_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_006_02_640.webp 640w, /img/content/catalog-item__img_006_02_1280.webp 1280w, /img/content/catalog-item__img_006_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_006_02_640.jpg 640w, /img/content/catalog-item__img_006_02_1280.jpg 1280w, /img/content/catalog-item__img_006_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_006_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_006_03_640.webp 640w, /img/content/catalog-item__img_006_03_1280.webp 1280w, /img/content/catalog-item__img_006_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_006_03_640.jpg 640w, /img/content/catalog-item__img_006_03_1280.jpg 1280w, /img/content/catalog-item__img_006_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_006_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 1,
+            "rating": 2,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 6,
+            "name": "Catalog Item 007",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_007_01_640.webp 640w, /img/content/catalog-item__img_007_01_1280.webp 1280w, /img/content/catalog-item__img_007_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_007_01_640.jpg 640w, /img/content/catalog-item__img_007_01_1280.jpg 1280w, /img/content/catalog-item__img_007_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_007_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_007_02_640.webp 640w, /img/content/catalog-item__img_007_02_1280.webp 1280w, /img/content/catalog-item__img_007_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_007_02_640.jpg 640w, /img/content/catalog-item__img_007_02_1280.jpg 1280w, /img/content/catalog-item__img_007_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_007_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_007_03_640.webp 640w, /img/content/catalog-item__img_007_03_1280.webp 1280w, /img/content/catalog-item__img_007_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_007_03_640.jpg 640w, /img/content/catalog-item__img_007_03_1280.jpg 1280w, /img/content/catalog-item__img_007_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_007_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 2,
+            "rating": 3,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        },
+        {
+            "id": 7,
+            "name": "Catalog Item 008",
+            "images": {
+                "img_01": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_008_01_640.webp 640w, /img/content/catalog-item__img_008_01_1280.webp 1280w, /img/content/catalog-item__img_008_01_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_008_01_640.jpg 640w, /img/content/catalog-item__img_008_01_1280.jpg 1280w, /img/content/catalog-item__img_008_01_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_008_01_1280.jpg"
+                },
+                "img_02": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_008_02_640.webp 640w, /img/content/catalog-item__img_008_02_1280.webp 1280w, /img/content/catalog-item__img_008_02_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_008_02_640.jpg 640w, /img/content/catalog-item__img_008_02_1280.jpg 1280w, /img/content/catalog-item__img_008_02_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_008_02_1280.jpg"
+                },
+                "img_03": {
+                    "imgSrcSetWebp": "/img/content/catalog-item__img_008_03_640.webp 640w, /img/content/catalog-item__img_008_03_1280.webp 1280w, /img/content/catalog-item__img_008_03_1920.webp 1920w",
+                    "imgSrcSetJpg": "/img/content/catalog-item__img_008_03_640.jpg 640w, /img/content/catalog-item__img_008_03_1280.jpg 1280w, /img/content/catalog-item__img_008_03_1920.jpg 1920w",
+                    "imgSrc": "/img/content/catalog-item__img_008_03_1280.jpg"
+                }
+            },
+            "price": 100,
+            "colors": [0, 1, 2, 3, 4, 5],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": 3,
+            "rating": 1,
+            "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum rem nesciunt aliquam totam voluptatum, tempore excepturi sapiente facilis."
+        }
+    ]
+}

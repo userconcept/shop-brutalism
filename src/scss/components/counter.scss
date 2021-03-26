@@ -1,0 +1,9 @@
+.counter {
+    font-size: 0;
+
+    &__input {
+        width: rem(44);
+        margin: 0 rem(8);
+        text-align: center;
+    }
+}

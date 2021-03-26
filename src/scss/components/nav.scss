@@ -1,0 +1,31 @@
+.nav {
+    padding-top: rem(112);
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: $bg_color_1x;
+    transition: top $trans_lg;
+
+    @include screen_1200_min_width {
+        padding-top: 0;
+        height: auto;
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        background-color: transparent;
+        transition: top $trans_none;
+    }
+
+    &_active {
+        top: 0;
+        box-shadow: $box_shadow_1x;
+
+        @include screen_1200_min_width {
+            top: auto;
+            box-shadow: none;
+        }
+    }
+}

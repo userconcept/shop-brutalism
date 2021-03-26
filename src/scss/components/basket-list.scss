@@ -1,0 +1,11 @@
+.basket-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include screen_1200_min_width {
+        margin: 0 -2px;
+        border-left: $border_width_2x solid $black;
+        border-right: $border_width_2x solid $black;
+    }
+}

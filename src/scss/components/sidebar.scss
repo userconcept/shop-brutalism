@@ -1,0 +1,16 @@
+.sidebar {
+    padding: rem(16);
+    border-bottom: $border_width_2x solid $black;
+
+    @include screen_1200_min_width {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}

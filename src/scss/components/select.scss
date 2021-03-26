@@ -1,0 +1,105 @@
+.select {
+    position: relative;
+
+    &__name {
+        display: inline-block;
+        vertical-align: top;
+        padding: rem(8) rem(16);
+        border: $border_width_2x solid $black;
+        line-height: 1.25;
+        z-index: 1;
+
+        @include screen_1200_min_width {
+            position: relative;
+            transition: color $trans_sm;
+        }
+
+        &:before {
+            @include screen_1200_min_width {
+                content: ' ';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 0;
+                background-color: $black;
+                transition: height $trans_sm;
+                z-index: -1;
+            }
+        }
+
+        &:hover {
+            @include screen_1200_min_width {
+                color: $white;
+
+                &:before {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: -2px 0 0;
+        padding: 0;
+        list-style: none;
+        border: $border_width_2x solid $black;
+    }
+
+    &__item {
+        padding: rem(8) rem(16);
+        border-bottom: $border_width_2x solid $black;
+        line-height: 1.25;
+        position: relative;
+        transition: color $trans_sm;
+
+        &:last-of-type {
+            border-bottom-width: 0;
+        }
+
+        &:before,
+        &:after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: $white;
+            z-index: -1;
+        }
+
+        &:before {
+            height: 100%;
+        }
+
+        &:after {
+            height: 0;
+            background-color: $black;
+            transition: height $trans_sm;
+        }
+
+        &:hover {
+            @include screen_1200_min_width {
+                color: $white;
+
+                &:after {
+                    height: 100%;
+                }
+            }
+        }
+
+        &_active {
+            color: $white;
+            cursor: default;
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+}

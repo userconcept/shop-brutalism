@@ -1,0 +1,176 @@
+.services-item {
+    padding: rem(16);
+    border-bottom: $border_width_2x solid $black;
+
+    @include screen_600_min_width {
+        border-right: $border_width_2x solid $black;
+    }
+
+    &__inner {
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+
+            @include screen_1200_min_width {
+
+                & .services-item__overlay {
+                    transform: translateY(0%);
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 0;
+    }
+
+    &__title {
+        margin: 0;
+        padding: rem(16);
+        font-size: rem(20);
+        line-height: 1.25;
+        font-weight: 500;
+        color: $white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $black;
+        max-height: rem(57);
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    &__price {
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: rem(16);
+        font-size: rem(20);
+        z-index: 1;
+    }
+
+    &__overlay {
+        padding: rem(16) rem(16) 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: rem(57);
+        background-color: $black;
+        transform: translateY(100%);
+
+        @include screen_1200_min_width {
+            transition: transform $trans_sm;
+        }
+    }
+
+    .color {
+
+        &:hover {
+
+            @include screen_1200_min_width {
+
+                &:before,
+                &:after {
+                    background-color: $white;
+                }
+            }
+        }
+
+        &.color_active {
+
+            &:before,
+            &:after {
+                background-color: $white;
+            }
+        }
+
+        &_white {
+
+            &:hover {
+
+                @include screen_1200_min_width {
+
+                    &:before,
+                    &:after {
+                        background-color: $black;
+                    }
+                }
+            }
+
+            &.color_active {
+
+                &:before,
+                &:after {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+
+    &__sizes,
+    &__add,
+    &__price {
+        color: $white;
+    }
+
+    &__sizes,
+    &__add {
+        margin-top: rem(16);
+    }
+
+    .size {
+
+        &:hover {
+
+            @include screen_1200_min_width {
+
+                &:before,
+                &:after {
+                    background-color: $white;
+                }
+            }
+        }
+
+        &.size_active {
+
+            &:before,
+            &:after {
+                background-color: $white;
+            }
+        }
+    }
+
+    &__add {
+        border-color: $white;
+        float: right;
+
+        &:before {
+            background-color: $black;
+        }
+
+        &:after {
+            background-color: $white;
+        }
+
+        &:hover {
+
+            @include screen_1200_min_width {
+                color: $black;
+            }
+        }
+
+        &_active {
+            color: $black;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.colors {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+
+    &__color {
+        margin-right: rem(8);
+        border-color: $white;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

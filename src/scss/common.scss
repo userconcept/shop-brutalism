@@ -1,0 +1,111 @@
+// Common styles of the project:
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: none;
+
+    @include screen_1600_min_width {
+        font-size: 1vw;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: $font_normal;
+    color: $black;
+    text-rendering: optimizeLegibility;
+}
+
+.page-wrapper {
+    position: relative;
+    min-height: 100%;
+    border-left: $border_width_2x solid $black;
+    border-right: $border_width_2x solid $black;
+}
+
+.empty {
+    height: rem(84);
+    margin-top: -2px;
+
+    @include screen_1200_min_width {
+        height: rem(96);
+    }
+}
+
+.scroll_off {
+    height: 100%;
+    overflow: hidden;
+
+    @include screen_1200_min_width {
+        width: auto;
+        margin-right: 17px;
+    }
+
+    .header {
+        @include screen_1200_min_width {
+            right: 17px;
+        }
+    }
+}
+
+.services,
+.service,
+.basket {
+    &:before {
+        content: ' ';
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $black;
+        z-index: 3;
+        animation: fade_in 0.5s linear 0.1s backwards;
+    }
+}
+
+.logo,
+.nav-list__link,
+.select__name,
+.select__item,
+.button,
+.button-tag,
+.button-square,
+.button-counter,
+.button-close,
+.services-item__link,
+.color,
+.size,
+.add,
+.basket-item__link {
+    cursor: crosshair;
+}
+
+// Fade in:
+
+@keyframes fade_in {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0;
+    }
+}

@@ -1,0 +1,57 @@
+.add {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: rem(3) rem(8);
+    border: $border_width_2x solid $black;
+    outline: none;
+    background-color: transparent;
+    color: $black;
+    font-size: rem(16);
+    line-height: 1.25;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    transition: color $trans_sm;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &:before {
+        height: 100%;
+        background-color: $white;
+    }
+
+    &:after {
+        height: 0;
+        background-color: $black;
+        transition: height $trans_sm;
+    }
+
+    &:hover {
+
+        @include screen_1200_min_width {
+            color: $white;
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+
+    &_active {
+        color: $white;
+
+        &:after {
+            height: 100%;
+        }
+    }
+}
