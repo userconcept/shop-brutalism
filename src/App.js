@@ -9,13 +9,13 @@ function App() {
     const [services, setServices] = React.useState([]);
 
     React.useEffect(() => {
-        // fetch('http://localhost:3000/db.json')
+        // fetch('https://userconcept.github.io/shop_react/db.json')
         //     .then((resp) => resp.json())
         //     .then((json) => {
         //         setServices(json.services);
         //     });
 
-        axios.get('/db.json').then(({ data }) => {
+        axios.get('https://userconcept.github.io/shop_react/db.json').then(({ data }) => {
             setServices(data.services);
         });
     }, []);
