@@ -156,6 +156,7 @@ Service.defaultProps = {
     id: 0,
     name: 'Services Item',
     price: 0,
+    images: {},
     colors: [],
     sizes: [],
 };

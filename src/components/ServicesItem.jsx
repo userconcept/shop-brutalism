@@ -21,7 +21,7 @@ function ServicesItem({ id, name, images, price, colors, sizes }) {
     return (
         <li className="services-item services-list__services-item">
             <article className="services-item__inner">
-                <Link className="services-item__link" to={`/service/${id}`}>
+                <Link className="services-item__link" to={`/shop_react/service/${id}`}>
                     {name}
                 </Link>
                 <h3 className="services-item__title">{name}</h3>
@@ -97,6 +97,7 @@ ServicesItem.defaultProps = {
     id: 0,
     name: 'Services Item',
     price: 0,
+    images: {},
     colors: [],
     sizes: [],
 };

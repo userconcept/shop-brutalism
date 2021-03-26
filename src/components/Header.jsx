@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <header className="header">
-            <Link className="logo header__logo" to="/">
+            <Link className="logo header__logo" to="/shop_react">
                 <svg className="icon icon_logo logo__icon" width="100" height="100">
                     <use xlinkHref="svg-symbols.svg#icon_logo"></use>
                 </svg>

@@ -20,17 +20,15 @@ function App() {
         });
     }, []);
 
-    // console.log(services);
-
     return (
         <>
             <div className="page-wrapper">
                 <Header />
                 <main className="main">
-                    <Route path="/" render={() => <Home items={services} />} exact />
-                    <Route path="/cart" component={Cart} exact />
+                    <Route path="/shop_react" render={() => <Home items={services} />} exact />
+                    <Route path="/shop_react/cart" component={Cart} exact />
                     <Route
-                        path="/service/:id"
+                        path="/shop_react/service/:id"
                         render={(params) => <Service {...services[params.match.params.id]} />}
                         exact
                     />
