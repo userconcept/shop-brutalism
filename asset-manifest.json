@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shop-brutalism/static/css/main.a6e1c1de.css",
-    "main.js": "/shop-brutalism/static/js/main.1adc9af9.js",
+    "main.js": "/shop-brutalism/static/js/main.7d37c1d4.js",
     "static/media/Manrope-Regular.eot": "/shop-brutalism/static/media/Manrope-Regular.0419daf944551412efbf.eot",
     "static/media/Manrope-Medium.eot": "/shop-brutalism/static/media/Manrope-Medium.0600410565bbf41fb9d4.eot",
     "static/media/Manrope-Regular.ttf": "/shop-brutalism/static/media/Manrope-Regular.892a89f7015e492f6e21.ttf",
@@ -16,10 +16,10 @@
     "static/media/Manrope-ExtraBold.woff2": "/shop-brutalism/static/media/Manrope-ExtraBold.a90ad203eaed8bfd3323.woff2",
     "index.html": "/shop-brutalism/index.html",
     "main.a6e1c1de.css.map": "/shop-brutalism/static/css/main.a6e1c1de.css.map",
-    "main.1adc9af9.js.map": "/shop-brutalism/static/js/main.1adc9af9.js.map"
+    "main.7d37c1d4.js.map": "/shop-brutalism/static/js/main.7d37c1d4.js.map"
   },
   "entrypoints": [
     "static/css/main.a6e1c1de.css",
-    "static/js/main.1adc9af9.js"
+    "static/js/main.7d37c1d4.js"
   ]
 }
