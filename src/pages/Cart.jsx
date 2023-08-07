@@ -15,14 +15,14 @@ function Cart() {
                             <picture className="picture cart-item__picture">
                                 <source
                                     type="image/webp"
-                                    srcSet="/img/content/catalog-item__img_001_01_640.webp 640w, /img/content/catalog-item__img_001_01_1280.webp 1280w"
+                                    srcSet="/shop-brutalism/img/content/catalog-item__img_001_01_640.webp 640w, /shop-brutalism/img/content/catalog-item__img_001_01_1280.webp 1280w"
                                     sizes="(min-width: 1600px) 7.5vw, 7.5rem"
                                 />
                                 <img
                                     className="picture__img"
-                                    srcSet="/img/content/catalog-item__img_001_01_640.jpg 640w, /img/content/catalog-item__img_001_01_1280.jpg 1280w"
+                                    srcSet="/shop-brutalism/img/content/catalog-item__img_001_01_640.jpg 640w, /shop-brutalism/img/content/catalog-item__img_001_01_1280.jpg 1280w"
                                     sizes="(min-width: 1600px) 7.5vw, 7.5rem"
-                                    src="/img/content/catalog-item__img_001_01_640.jpg"
+                                    src="/shop-brutalism/img/content/catalog-item__img_001_01_640.jpg"
                                     alt="Catalog item 001"
                                 />
                             </picture>
@@ -59,14 +59,14 @@ function Cart() {
                             <picture className="picture cart-item__picture">
                                 <source
                                     type="image/webp"
-                                    srcSet="/img/content/catalog-item__img_002_01_640.webp 640w, /img/content/catalog-item__img_002_01_1280.webp 1280w"
+                                    srcSet="/shop-brutalism/img/content/catalog-item__img_002_01_640.webp 640w, /shop-brutalism/img/content/catalog-item__img_002_01_1280.webp 1280w"
                                     sizes="(min-width: 1600px) 7.5vw, 7.5rem"
                                 />
                                 <img
                                     className="picture__img"
-                                    srcSet="/img/content/catalog-item__img_002_01_640.jpg 640w, /img/content/catalog-item__img_002_01_1280.jpg 1280w"
+                                    srcSet="/shop-brutalism/img/content/catalog-item__img_002_01_640.jpg 640w, /shop-brutalism/img/content/catalog-item__img_002_01_1280.jpg 1280w"
                                     sizes="(min-width: 1600px) 7.5vw, 7.5rem"
-                                    src="/img/content/catalog-item__img_002_01_640.jpg"
+                                    src="/shop-brutalism/img/content/catalog-item__img_002_01_640.jpg"
                                     alt="Catalog item 002"
                                 />
                             </picture>
@@ -103,14 +103,14 @@ function Cart() {
                             <picture className="picture cart-item__picture">
                                 <source
                                     type="image/webp"
-                                    srcSet="/img/content/catalog-item__img_003_01_640.webp 640w, /img/content/catalog-item__img_003_01_1280.webp 1280w"
+                                    srcSet="/shop-brutalism/img/content/catalog-item__img_003_01_640.webp 640w, /shop-brutalism/img/content/catalog-item__img_003_01_1280.webp 1280w"
                                     sizes="(min-width: 1600px) 7.5vw, 7.5rem"
                                 />
                                 <img
                                     className="picture__img"
-                                    srcSet="/img/content/catalog-item__img_003_01_640.jpg 640w, /img/content/catalog-item__img_003_01_1280.jpg 1280w"
+                                    srcSet="/shop-brutalism/img/content/catalog-item__img_003_01_640.jpg 640w, /shop-brutalism/img/content/catalog-item__img_003_01_1280.jpg 1280w"
                                     sizes="(min-width: 1600px) 7.5vw, 7.5rem"
-                                    src="/img/content/catalog-item__img_003_01_640.jpg"
+                                    src="/shop-brutalism/img/content/catalog-item__img_003_01_640.jpg"
                                     alt="Catalog item 003"
                                 />
                             </picture>
