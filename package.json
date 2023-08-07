@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "E-commerce website design concept",
   "author": "userconcept <userconcept@yandex.ru> (https://userconcept.ru)",
+  "homepage": "https://userconcept.github.io/shop-brutalism",
   "main": "src/index.js",
   "license": "MIT",
   "private": true,
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
