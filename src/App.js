@@ -1,42 +1,46 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
+import { Routes, Route, useParams } from 'react-router-dom';
 import axios from 'axios';
 
-import { Header, Footer } from './components';
-import { Home, Service, Cart } from './pages';
-import { Route } from 'react-router-dom';
+import { Catalog, Product, Cart, NotFound } from './pages';
+
+import { Layout } from './components';
+
+function ProductWrapper({ children }) {
+    const { id } = useParams();
+
+    return children(id);
+}
 
 function App() {
-    const [services, setServices] = React.useState([]);
+    const [items, setItems] = useState([]);
 
-    React.useEffect(() => {
-        // fetch('https://userconcept.github.io/shop_react/db.json')
-        //     .then((resp) => resp.json())
+    useEffect(() => {
+        // fetch('/db.json')
+        //     .then((promise) => promise.json())
         //     .then((json) => {
-        //         setServices(json.services);
+        //         setItems(json.items);
         //     });
 
-        axios.get('https://userconcept.github.io/shop_react/db.json').then(({ data }) => {
-            setServices(data.services);
+        axios.get('/db.json').then(({ data }) => {
+            setItems(data.items);
         });
     }, []);
 
     return (
         <>
-            <div className="page-wrapper">
-                <Header />
-                <main className="main">
-                    <Route path="/shop_react" render={() => <Home items={services} />} exact />
-                    <Route path="/shop_react/cart" component={Cart} exact />
-                    <Route
-                        path="/shop_react/service/:id"
-                        render={(params) => <Service {...services[params.match.params.id]} />}
-                        exact
-                    />
-                    {/* <Route path="/service/:id" render={() => <Service items={services} />} exact /> */}
-                </main>
-                <div className="empty"></div>
-            </div>
-            <Footer />
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Catalog items={items} />} />
+                    <Route path="product/:id" element={
+                        <ProductWrapper>
+                            {(id) => <Product {...items[id]} />}
+                        </ProductWrapper>
+                    } />
+                    <Route path="cart" element={<Cart />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
         </>
     );
 }

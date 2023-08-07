@@ -1,9 +1,37 @@
-.services-item {
+.catalog-item {
     padding: rem(16);
     border-bottom: $border_width_2x solid $black;
 
     @include screen_600_min_width {
         border-right: $border_width_2x solid $black;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+
+        @include screen_600_min_width {
+            border-bottom: $border_width_2x solid $black;
+        }
+    }
+
+    &:nth-of-type(2n+1):nth-last-of-type(-n+2),
+    &:nth-of-type(2n+1):nth-last-of-type(-n+2) ~ .catalog-item {
+
+        @include screen_600_min_width {
+            border-bottom: none;
+        }
+
+        @include screen_1200_min_width {
+            border-bottom: $border_width_2x solid $black;
+        }
+    }
+
+    &:nth-of-type(4n+1):nth-last-of-type(-n+4),
+    &:nth-of-type(4n+1):nth-last-of-type(-n+4) ~ .catalog-item {
+
+        @include screen_1200_min_width {
+            border-bottom: none;
+        }
     }
 
     &__inner {
@@ -14,7 +42,7 @@
 
             @include screen_1200_min_width {
 
-                & .services-item__overlay {
+                & .catalog-item__overlay {
                     transform: translateY(0%);
                 }
             }
@@ -73,14 +101,14 @@
         }
     }
 
-    .color {
+    & .color {
 
         &:hover {
 
             @include screen_1200_min_width {
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     background-color: $white;
                 }
             }
@@ -88,8 +116,8 @@
 
         &.color_active {
 
-            &:before,
-            &:after {
+            &::before,
+            &::after {
                 background-color: $white;
             }
         }
@@ -100,8 +128,8 @@
 
                 @include screen_1200_min_width {
 
-                    &:before,
-                    &:after {
+                    &::before,
+                    &::after {
                         background-color: $black;
                     }
                 }
@@ -109,8 +137,8 @@
 
             &.color_active {
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     background-color: $black;
                 }
             }
@@ -128,14 +156,14 @@
         margin-top: rem(16);
     }
 
-    .size {
+    & .size {
 
         &:hover {
 
             @include screen_1200_min_width {
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     background-color: $white;
                 }
             }
@@ -143,8 +171,8 @@
 
         &.size_active {
 
-            &:before,
-            &:after {
+            &::before,
+            &::after {
                 background-color: $white;
             }
         }
@@ -154,11 +182,11 @@
         border-color: $white;
         float: right;
 
-        &:before {
+        &::before {
             background-color: $black;
         }
 
-        &:after {
+        &::after {
             background-color: $white;
         }
 

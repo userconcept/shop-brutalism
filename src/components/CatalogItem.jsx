@@ -1,14 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-function ServicesItem({ id, name, images, price, colors, sizes }) {
+function CatalogItem({ id, name, images, price, colors, sizes }) {
     const colorsNames = ['black', 'white', 'blue', 'green', 'red', 'yellow'];
     const sizesNames = ['xs', 's', 'm', 'l', 'xl'];
 
-    const [activeColor, setActiveColor] = React.useState(colors[0]);
-    const [activeSize, setActiveSize] = React.useState(sizes[0]);
+    const [activeColor, setActiveColor] = useState(colors[0]);
+    const [activeSize, setActiveSize] = useState(sizes[0]);
 
     const onSelectColor = (index) => {
         setActiveColor(index);
@@ -19,15 +19,15 @@ function ServicesItem({ id, name, images, price, colors, sizes }) {
     };
 
     return (
-        <li className="services-item services-list__services-item">
-            <article className="services-item__inner">
-                <Link className="services-item__link" to={`/shop_react/service/${id}`}>
+        <li className="catalog-item catalog-list__catalog-item">
+            <article className="catalog-item__inner">
+                <Link className="catalog-item__link" to={`/product/${id}`}>
                     {name}
                 </Link>
-                <h3 className="services-item__title">{name}</h3>
-                <div className="price services-item__price">{price} $</div>
-                <div className="services-item__overlay">
-                    <ul className="colors services-item__colors">
+                <h3 className="catalog-item__title">{name}</h3>
+                <div className="price catalog-item__price">{price} $</div>
+                <div className="catalog-item__overlay">
+                    <ul className="colors catalog-item__colors">
                         {colorsNames.map((color, index) => (
                             <li
                                 className={classNames(
@@ -45,7 +45,7 @@ function ServicesItem({ id, name, images, price, colors, sizes }) {
                             </li>
                         ))}
                     </ul>
-                    <ul className="sizes services-item__sizes">
+                    <ul className="sizes catalog-item__sizes">
                         {sizesNames.map((size, index) => (
                             <li
                                 className={classNames(
@@ -63,18 +63,18 @@ function ServicesItem({ id, name, images, price, colors, sizes }) {
                             </li>
                         ))}
                     </ul>
-                    <button className="add services-item__add">+ add</button>
+                    <button className="add catalog-item__add">+ add</button>
                 </div>
-                <picture className="picture services-item__picture">
+                <picture className="picture catalog-item__picture">
                     <source
                         type="image/webp"
                         srcSet={images.img_01.imgSrcSetWebp}
-                        sizes="(min-width: 1200px) 21.75vw, (min-width: 600px) 44.1666666667vw, 90vw"
+                        sizes="(min-width: 1200px) 22.125vw, (min-width: 600px) 44.1666666667vw, 90vw"
                     />
                     <img
                         className="picture__img"
                         srcSet={images.img_01.imgSrcSetJpg}
-                        sizes="(min-width: 1200px) 21.75vw, (min-width: 600px) 44.1666666667vw, 90vw"
+                        sizes="(min-width: 1200px) 22.125vw, (min-width: 600px) 44.1666666667vw, 90vw"
                         src={images.img_01.imgSrc}
                         alt={name}
                     />
@@ -84,7 +84,7 @@ function ServicesItem({ id, name, images, price, colors, sizes }) {
     );
 }
 
-ServicesItem.propTypes = {
+CatalogItem.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     images: PropTypes.object.isRequired,
@@ -93,13 +93,29 @@ ServicesItem.propTypes = {
     sizes: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-ServicesItem.defaultProps = {
+CatalogItem.defaultProps = {
     id: 0,
-    name: 'Services Item',
-    images: {},
+    name: 'Catalog Item',
+    images: {
+        img_01: {
+            imgSrcSetWebp: '',
+            imgSrcSetJpg: '',
+            imgSrc: '',
+        },
+        img_02: {
+            imgSrcSetWebp: '',
+            imgSrcSetJpg: '',
+            imgSrc: '',
+        },
+        img_03: {
+            imgSrcSetWebp: '',
+            imgSrcSetJpg: '',
+            imgSrc: '',
+        },
+    },
     price: 0,
     colors: [],
     sizes: [],
 };
 
-export default ServicesItem;
+export default CatalogItem;

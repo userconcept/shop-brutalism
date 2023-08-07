@@ -8,15 +8,15 @@
     text-transform: uppercase;
     position: relative;
 
-    &:before,
-    &:after {
-        content: ' ';
+    &::before,
+    &::after {
+        content: "";
         display: block;
         position: absolute;
         transition: background-color $trans_sm;
     }
 
-    &:before {
+    &::before {
         top: 50%;
         left: 0;
         right: 0;
@@ -24,7 +24,7 @@
         height: $border_width_2x;
     }
 
-    &:after {
+    &::after {
         top: 0;
         left: 50%;
         bottom: 0;
@@ -33,9 +33,11 @@
     }
 
     &:hover {
+
         @include screen_1200_min_width {
-            &:before,
-            &:after {
+
+            &::before,
+            &::after {
                 background-color: $black;
             }
         }
@@ -43,8 +45,9 @@
 
     &_active {
         cursor: default;
-        &:before,
-        &:after {
+
+        &::before,
+        &::after {
             background-color: $black;
         }
     }

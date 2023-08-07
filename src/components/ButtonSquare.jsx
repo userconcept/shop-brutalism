@@ -6,7 +6,7 @@ const ButtonSquare = ({ onClick, className, children }) => {
         <Link
             className={classNames('button-square', className)}
             onClick={onClick}
-            to="/shop_react/cart">
+            to="/cart">
             {children}
         </Link>
     );

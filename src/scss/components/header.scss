@@ -8,13 +8,12 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     padding: rem(16) rem(64) rem(16) rem(16);
     background-color: $white;
-    border: $border_width_2x solid $black;
+    border-top: $border_width_2x solid $black;
+    border-bottom: $border_width_2x solid $black;
     z-index: 2;
 
     @include screen_1200_min_width {

@@ -3,6 +3,5 @@
 
     @include screen_1200_min_width {
         border-bottom: none;
-        border-left: $border_width_1x solid $black;
     }
 }

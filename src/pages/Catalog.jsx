@@ -1,14 +1,13 @@
-import { SidebarLeft, SelectBlock, ServicesItem } from '../components';
+import { SidebarLeft, SelectBlock, CatalogItem } from '../components';
 
-function Home({ items }) {
+function Catalog({ items }) {
     return (
-        <section className="services">
-            <div className="section-top services__section-top">
+        <section className="catalog">
+            <div className="section-top catalog__section-top">
                 <h1 className="title title_middle section-top__title">Women</h1>
             </div>
-            <aside className="sidebar services__sidebar">
+            <aside className="sidebar catalog__sidebar">
                 <SidebarLeft
-                    onClickItem={(name) => console.log(name)}
                     items={[
                         'Short sleeve',
                         'Long sleeve',
@@ -23,9 +22,9 @@ function Home({ items }) {
                     <SelectBlock items={['Popular', 'Price', 'Name']} />
                 </div>
             </aside>
-            <ul className="services-list services__services-list">
+            <ul className="catalog-list catalog__catalog-list">
                 {items.map((obj) => (
-                    // <ServicesItem
+                    // <CatalogItem
                     //     key={obj.id}
                     //     name={obj.name}
                     //     imgSrcSetWebp={obj.imgSrcSetWebp}
@@ -33,12 +32,13 @@ function Home({ items }) {
                     //     imgSrc={obj.imgSrc}
                     // />
 
-                    // <ServicesItem key={obj.id} obj={obj} />
-                    <ServicesItem key={obj.id} {...obj} />
+                    // <CatalogItem key={obj.id} obj={obj} />
+
+                    <CatalogItem key={obj.id} {...obj} />
                 ))}
             </ul>
         </section>
     );
 }
 
-export default Home;
+export default Catalog;

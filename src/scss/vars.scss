@@ -9,41 +9,9 @@ $font_bold: 'Manrope', Arial, Helvetica, sans-serif;
 
 $black: black;
 $white: white;
-$blue: #000066;
-$decorative: darkslateblue;
 
 $border_width_1x: 1px;
 $border_width_2x: 2px;
-
-// Colors transparent:
-
-$black_transparent: rgba(0, 0, 0, .95);
-
-// Colors gradients:
-
-$color_gradient_1x: #000066;
-$color_gradient_2x: white;
-
-// Background colors:
-
-$bg_color_1x: rgba(255, 255, 255, .25);
-
-// Blur:
-
-$blur: blur(4px);
-
-// Box shadows:
-
-$box_shadow_1x: 0 rem(8) rem(32) 0 rgba(31, 38, 135, 0.37);
-$box_shadow_2x: 0 rem(-8) rem(32) 0 rgba(31, 38, 135, 0.37);
-$box_shadow_3x: 0 0 rem(32) 0 rgba(31, 38, 135, 0.37);
-
-$box_shadow_1x_hover: 0 0 rem(32) rem(-16) rgba(31, 38, 135, 0.37);
-
-// Drop shadows:
-
-$drop_shadow_1x: drop-shadow(0 rem(16) rem(8) rgba(31, 38, 135, 1));
-$drop_shadow_2x: drop-shadow(0 rem(-16) rem(8) rgba(31, 38, 135, 1));
 
 // Transitions:
 

@@ -14,9 +14,10 @@
             transition: color $trans_sm;
         }
 
-        &:before {
+        &::before {
+
             @include screen_1200_min_width {
-                content: ' ';
+                content: "";
                 display: block;
                 position: absolute;
                 top: 0;
@@ -30,10 +31,11 @@
         }
 
         &:hover {
+
             @include screen_1200_min_width {
                 color: $white;
 
-                &:before {
+                &::before {
                     height: 100%;
                 }
             }
@@ -61,9 +63,9 @@
             border-bottom-width: 0;
         }
 
-        &:before,
-        &:after {
-            content: ' ';
+        &::before,
+        &::after {
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -73,21 +75,22 @@
             z-index: -1;
         }
 
-        &:before {
+        &::before {
             height: 100%;
         }
 
-        &:after {
+        &::after {
             height: 0;
             background-color: $black;
             transition: height $trans_sm;
         }
 
         &:hover {
+
             @include screen_1200_min_width {
                 color: $white;
 
-                &:after {
+                &::after {
                     height: 100%;
                 }
             }
@@ -97,7 +100,7 @@
             color: $white;
             cursor: default;
 
-            &:after {
+            &::after {
                 height: 100%;
             }
         }

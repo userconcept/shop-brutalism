@@ -21,9 +21,9 @@
         margin: -2px 0 0 rem(-13);
         background-color: $black;
 
-        &:before,
-        &:after {
-            content: " ";
+        &::before,
+        &::after {
+            content: "";
             display: block;
             position: absolute;
             width: 100%;
@@ -32,30 +32,30 @@
             transition: transform $trans_sm;
         }
 
-        &:before {
+        &::before {
             top: rem(-10);
         }
 
-        &:after {
+        &::after {
             bottom: rem(-10);
         }
     }
 
     &_active {
 
-        .button-nav__hamburger {
+        & .button-nav__hamburger {
             background-color: transparent;
 
-            &:before,
-            &:after {
+            &::before,
+            &::after {
                 top: 0;
             }
 
-            &:before {
+            &::before {
                 transform: rotate(45deg);
             }
 
-            &:after {
+            &::after {
                 transform: rotate(-45deg);
             }
         }

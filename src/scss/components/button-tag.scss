@@ -13,8 +13,8 @@
     position: relative;
     transition: color $trans_sm;
 
-    &:before {
-        content: ' ';
+    &::before {
+        content: "";
         display: block;
         position: absolute;
         top: 0;
@@ -27,10 +27,11 @@
     }
 
     &:hover {
+
         @include screen_1200_min_width {
             color: $white;
 
-            &:before {
+            &::before {
                 height: 100%;
             }
         }
@@ -40,7 +41,7 @@
         color: $white;
         cursor: default;
 
-        &:before {
+        &::before {
             height: 100%;
         }
     }

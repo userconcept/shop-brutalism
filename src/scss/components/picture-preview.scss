@@ -1,5 +1,5 @@
 .picture-preview {
-    margin: 0 -2px;
+    margin: 0 -2px 0 0;
     padding: 0;
     list-style: none;
     display: -webkit-flex;
@@ -7,26 +7,28 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    border-left: $border_width_2x solid $black;
     border-bottom: $border_width_2x solid $black;
+    overflow-x: auto;
 
     @include screen_1200_min_width {
         margin: 0;
         display: block;
-        border-left: none;
-        border-right: $border_width_1x solid $black;
+        border-right: $border_width_2x solid $black;
         border-bottom: none;
+        overflow-x: visible;
     }
 
     &__item {
+        flex: 0 0 rem(143);
+        flex: 0 0 39.7222222222vw;
+        width: rem(143);
+        width: 39.7222222222vw;
         padding: rem(16);
         border-right: $border_width_2x solid $black;
 
         @include screen_1200_min_width {
+            flex: 0 1 auto;
+            width: auto;
             border-right: none;
             border-bottom: $border_width_2x solid $black;
         }

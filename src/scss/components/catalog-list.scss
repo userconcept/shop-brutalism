@@ -1,4 +1,4 @@
-.services-list {
+.catalog-list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,8 +6,7 @@
     @include screen_600_min_width {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        margin: 0 -2px;
-        border-left: $border_width_2x solid $black;
+        margin-right: -2px;
     }
 
     @include screen_1200_min_width {

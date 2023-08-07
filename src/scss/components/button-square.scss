@@ -39,8 +39,8 @@
         padding-right: rem(13);
         position: relative;
 
-        &:before {
-            content: ' ';
+        &::before {
+            content: "";
             display: block;
             position: absolute;
             top: 0;

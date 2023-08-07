@@ -1,8 +1,7 @@
-.service-left {
+.product-left {
 
     @include screen_1200_min_width {
-        border-left: $border_width_2x solid $black;
-        border-right: $border_width_1x solid $black;
+        border-right: $border_width_2x solid $black;
         display: grid;
         grid-template-columns: 25% 75%;
     }

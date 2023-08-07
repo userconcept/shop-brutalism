@@ -11,10 +11,10 @@
     height: rem(44);
     position: relative;
 
-    &:before {
+    &::before {
 
         @include screen_1200_min_width {
-            content: " ";
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -30,14 +30,14 @@
 
         @include screen_1200_min_width {
 
-            &:before {
+            &::before {
                 height: 100%;
             }
 
-            .button-close__symbol {
+            & .button-close__symbol {
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     background-color: $white;
                 }
             }
@@ -53,9 +53,9 @@
         left: 50%;
         margin: -2px 0 0 rem(-11);
 
-        &:before,
-        &:after {
-            content: " ";
+        &::before,
+        &::after {
+            content: "";
             display: block;
             position: absolute;
             width: 100%;
@@ -67,11 +67,11 @@
             }
         }
 
-        &:before {
+        &::before {
             transform: rotate(45deg);
         }
 
-        &:after {
+        &::after {
             transform: rotate(-45deg);
         }
     }

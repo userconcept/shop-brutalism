@@ -16,10 +16,10 @@
         transition: color $trans_sm;
     }
 
-    &:before {
+    &::before {
 
         @include screen_1200_min_width {
-            content: " ";
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -37,7 +37,7 @@
         @include screen_1200_min_width {
             color: $white;
 
-            &:before {
+            &::before {
                 height: 100%;
             }
         }

@@ -1,9 +1,4 @@
-.service {
-    padding: rem(84) 0 $border_width_2x;
-
-    @include screen_1200_min_width {
-        padding-top: rem(96);
-    }
+.product {
 
     &__section-top {
         display: flex;
@@ -14,10 +9,11 @@
     }
 
     &__container {
+        
         @include screen_1200_min_width {
             display: grid;
             grid-template-columns: 66.6666666666% 33.3333333333%;
-            margin: 0 -2px;
+            margin: 0 -2px 0 0;
         }
     }
 }

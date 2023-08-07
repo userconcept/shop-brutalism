@@ -1,9 +1,9 @@
-import React from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 function SelectBlock({ items }) {
-    const [activeSelect, setActiveSelect] = React.useState(false);
-    const [activeItem, setActiveItem] = React.useState(0);
-    const selectRef = React.useRef();
+    const [activeSelect, setActiveSelect] = useState(false);
+    const [activeItem, setActiveItem] = useState(0);
+    const selectRef = useRef();
     const activeName = items[activeItem];
 
     const toggleActiveSelect = () => {
@@ -11,7 +11,7 @@ function SelectBlock({ items }) {
     };
 
     const clickOutside = (evt) => {
-        if (!evt.path.includes(selectRef.current)) {
+        if (!evt.target.closest('.select-block')) {
             setActiveSelect(false);
         }
     };
@@ -21,7 +21,7 @@ function SelectBlock({ items }) {
         setActiveSelect(false);
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         document.body.addEventListener('click', clickOutside);
     }, []);
 

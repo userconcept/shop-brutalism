@@ -8,15 +8,10 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    height: rem(84);
-    margin-top: rem(-84);
+    margin-top: auto;
     padding: rem(16);
     background-color: $white;
-    border: $border_width_2x solid $black;
+    border-top: $border_width_2x solid $black;
+    border-bottom: $border_width_2x solid $black;
     position: relative;
-
-    @include screen_1200_min_width {
-        height: rem(96);
-        margin-top: rem(-96);
-    }
 }

@@ -11,10 +11,10 @@
     height: rem(44);
     position: relative;
 
-    &:before {
+    &::before {
 
         @include screen_1200_min_width {
-            content: " ";
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -30,14 +30,14 @@
 
         @include screen_1200_min_width {
 
-            &:before {
+            &::before {
                 height: 100%;
             }
 
-            .button-counter__symbol {
+            & .button-counter__symbol {
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     background-color: $white;
                 }
             }
@@ -47,7 +47,7 @@
     &_minus,
     &_plus {
 
-        .button-counter__symbol {
+        & .button-counter__symbol {
             display: block;
             width: rem(22);
             height: 4px;
@@ -56,8 +56,8 @@
             left: 50%;
             margin: -2px 0 0 rem(-11);
 
-            &:before {
-                content: " ";
+            &::before {
+                content: "";
                 display: block;
                 position: absolute;
                 width: 100%;
@@ -73,10 +73,10 @@
 
     &_plus {
 
-        .button-counter__symbol {
+        & .button-counter__symbol {
 
-            &:after {
-                content: " ";
+            &::after {
+                content: "";
                 display: block;
                 position: absolute;
                 width: rem(22);
