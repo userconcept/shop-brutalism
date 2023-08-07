@@ -30,7 +30,7 @@ function App() {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/shop-brutalism" element={<Layout />}>
                     <Route index element={<Catalog items={items} />} />
                     <Route path="product/:id" element={
                         <ProductWrapper>
