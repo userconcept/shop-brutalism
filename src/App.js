@@ -16,13 +16,13 @@ function App() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        // fetch('/db.json')
+        // fetch('https://userconcept.github.io/shop-brutalism/db.json')
         //     .then((promise) => promise.json())
         //     .then((json) => {
         //         setItems(json.items);
         //     });
 
-        axios.get('/db.json').then(({ data }) => {
+        axios.get('https://userconcept.github.io/shop-brutalism/db.json').then(({ data }) => {
             setItems(data.items);
         });
     }, []);
