@@ -1,0 +1,29 @@
+{
+    "name": "shop-brutalism",
+    "short_name": "shop-brutalism",
+    "description": "E-commerce website design concept in brutalism style (React).",
+    "display": "minimal-ui",
+    "start_url": "/",
+    "id": "/",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "icons": [
+        {
+            "src": "/favicon-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "/favicon-192_maskable.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/favicon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

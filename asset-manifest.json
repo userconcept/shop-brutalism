@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/shop_react/static/css/main.1cdf0650.chunk.css",
-    "main.js": "/shop_react/static/js/main.0493117f.chunk.js",
-    "main.js.map": "/shop_react/static/js/main.0493117f.chunk.js.map",
-    "runtime-main.js": "/shop_react/static/js/runtime-main.895128b5.js",
-    "runtime-main.js.map": "/shop_react/static/js/runtime-main.895128b5.js.map",
-    "static/js/2.b9355935.chunk.js": "/shop_react/static/js/2.b9355935.chunk.js",
-    "static/js/2.b9355935.chunk.js.map": "/shop_react/static/js/2.b9355935.chunk.js.map",
-    "index.html": "/shop_react/index.html",
-    "static/css/main.1cdf0650.chunk.css.map": "/shop_react/static/css/main.1cdf0650.chunk.css.map",
-    "static/js/2.b9355935.chunk.js.LICENSE.txt": "/shop_react/static/js/2.b9355935.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/shop_react/static/media/Manrope-Regular.cb78aabf.woff2"
+    "main.css": "/shop-brutalism/static/css/main.a6e1c1de.css",
+    "main.js": "/shop-brutalism/static/js/main.eb5777d7.js",
+    "static/media/Manrope-Regular.eot": "/shop-brutalism/static/media/Manrope-Regular.0419daf944551412efbf.eot",
+    "static/media/Manrope-Medium.eot": "/shop-brutalism/static/media/Manrope-Medium.0600410565bbf41fb9d4.eot",
+    "static/media/Manrope-Regular.ttf": "/shop-brutalism/static/media/Manrope-Regular.892a89f7015e492f6e21.ttf",
+    "static/media/Manrope-Medium.ttf": "/shop-brutalism/static/media/Manrope-Medium.101a50f661e51b761ca1.ttf",
+    "static/media/Manrope-ExtraBold.eot": "/shop-brutalism/static/media/Manrope-ExtraBold.3097b2795bdcda15769a.eot",
+    "static/media/Manrope-ExtraBold.ttf": "/shop-brutalism/static/media/Manrope-ExtraBold.f51189cd27d0d0318509.ttf",
+    "static/media/Manrope-Medium.woff": "/shop-brutalism/static/media/Manrope-Medium.4e55dc20921a95ef83f4.woff",
+    "static/media/Manrope-Regular.woff": "/shop-brutalism/static/media/Manrope-Regular.2046a49b5fa996c43f44.woff",
+    "static/media/Manrope-ExtraBold.woff": "/shop-brutalism/static/media/Manrope-ExtraBold.af754df8afbc222b77e8.woff",
+    "static/media/Manrope-Medium.woff2": "/shop-brutalism/static/media/Manrope-Medium.9cccfee0f8d3153ae547.woff2",
+    "static/media/Manrope-Regular.woff2": "/shop-brutalism/static/media/Manrope-Regular.cb78aabfaaf5d95c8665.woff2",
+    "static/media/Manrope-ExtraBold.woff2": "/shop-brutalism/static/media/Manrope-ExtraBold.a90ad203eaed8bfd3323.woff2",
+    "index.html": "/shop-brutalism/index.html",
+    "main.a6e1c1de.css.map": "/shop-brutalism/static/css/main.a6e1c1de.css.map",
+    "main.eb5777d7.js.map": "/shop-brutalism/static/js/main.eb5777d7.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.895128b5.js",
-    "static/js/2.b9355935.chunk.js",
-    "static/css/main.1cdf0650.chunk.css",
-    "static/js/main.0493117f.chunk.js"
+    "static/css/main.a6e1c1de.css",
+    "static/js/main.eb5777d7.js"
   ]
 }
