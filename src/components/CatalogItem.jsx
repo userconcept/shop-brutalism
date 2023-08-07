@@ -21,7 +21,7 @@ function CatalogItem({ id, name, images, price, colors, sizes }) {
     return (
         <li className="catalog-item catalog-list__catalog-item">
             <article className="catalog-item__inner">
-                <Link className="catalog-item__link" to={`/product/${id}`}>
+                <Link className="catalog-item__link" to={`/shop-brutalism/product/${id}`}>
                     {name}
                 </Link>
                 <h3 className="catalog-item__title">{name}</h3>

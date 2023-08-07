@@ -11,7 +11,7 @@ function Cart() {
                 <li className="cart-item cart-list__cart-item">
                     <div className="cart-item__col">
                         <h2 className="title title_small cart-item__title">Catalog item 001</h2>
-                        <Link className="cart-item__link" to="/product/0">
+                        <Link className="cart-item__link" to="/shop-brutalism/product/0">
                             <picture className="picture cart-item__picture">
                                 <source
                                     type="image/webp"
@@ -55,7 +55,7 @@ function Cart() {
                 <li className="cart-item cart-list__cart-item">
                     <div className="cart-item__col">
                         <h2 className="title title_small cart-item__title">Catalog item 002</h2>
-                        <Link className="cart-item__link" to="/product/1">
+                        <Link className="cart-item__link" to="/shop-brutalism/product/1">
                             <picture className="picture cart-item__picture">
                                 <source
                                     type="image/webp"
@@ -99,7 +99,7 @@ function Cart() {
                 <li className="cart-item cart-list__cart-item">
                     <div className="cart-item__col">
                         <h2 className="title title_small cart-item__title">Catalog item 003</h2>
-                        <Link className="cart-item__link" to="/product/2">
+                        <Link className="cart-item__link" to="/shop-brutalism/product/2">
                             <picture className="picture cart-item__picture">
                                 <source
                                     type="image/webp"
