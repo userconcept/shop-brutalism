@@ -32,13 +32,13 @@ function App() {
             <Routes>
                 <Route path="/shop-brutalism" element={<Layout />}>
                     <Route index element={<Catalog items={items} />} />
-                    <Route path="/shop-brutalism/product/:id" element={
+                    <Route path="shop-brutalism/product/:id" element={
                         <ProductWrapper>
                             {(id) => <Product {...items[id]} />}
                         </ProductWrapper>
                     } />
-                    <Route path="/shop-brutalism/cart" element={<Cart />} />
-                    <Route path="/shop-brutalism/*" element={<NotFound />} />
+                    <Route path="shop-brutalism/cart" element={<Cart />} />
+                    <Route path="shop-brutalism/*" element={<NotFound />} />
                 </Route>
             </Routes>
         </>
